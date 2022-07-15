@@ -3,19 +3,19 @@ You will be required to simulate the registration process on a website] This tas
 
 1. Writing a “server” script which should be automated on a Virtual Machine in GCP
 2. Writing a “client” script to send a messaKe to the server script
-runninK on the VM
+running on the VM
 3. A GCP Function which sends an email to the client’s email, triggered by the server script
 
 ## Files required to submit:
 serverapy, clientapy, GCP function script.
 
 ### Client.py
-Should be executed via command line: python3 clientapy *email}
+Should be executed via command line: python3 clientapy *email
 email is the address that the client script sends to the server. You should use a real email that you can access to ensure you are
 receiving the email. This script will send the email to the VM server.
 
 ### Server.py
-Event-driven that responds to an email beinK receiveda It should receive the message from the client and forward it to the GCP
+Event-driven that responds to an email being received It should receive the message from the client and forward it to the GCP
 function. 
 
 ### GCP function script
