@@ -8,9 +8,10 @@ if len(sys.argv[:]) > 1:
   cmd_line_input = True
 
 s = socket.socket()
-port = 3391
-vm_ip = '34.87.213.59'
-s.connect(('127.0.0.1', port))
+port = 3389
+gcp_vm_ip = '34.87.213.59'
+# personal_ip = '127.0.0.1'
+s.connect((gcp_vm_ip, port))
 
 if cmd_line_input:
   s.send(cmd_line_email.encode())

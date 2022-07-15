@@ -2,7 +2,7 @@
 You will be required to simulate the registration process on a website] This task is composed of 3 different sub tasks: 
 
 1. Writing a “server” script which should be automated on a Virtual Machine in GCP
-2. Writing a “client” script to send a messaKe to the server script
+2. Writing a “client” script to send a message to the server script
 running on the VM
 3. A GCP Function which sends an email to the client’s email, triggered by the server script
 
