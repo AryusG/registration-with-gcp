@@ -1,9 +1,4 @@
 import socket 
-import smtplib
-from email.message import EmailMessage
-import ssl
-from dotenv import load_dotenv
-import os
 import requests
 from requests.structures import CaseInsensitiveDict
   
