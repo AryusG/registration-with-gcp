@@ -4,6 +4,10 @@ from email.message import EmailMessage
 import ssl
 from flask import escape
 import functions_framework
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 @functions_framework.http
 def send_email(request):
@@ -17,8 +21,8 @@ def send_email(request):
     else:
         destination_email = 'World'
 
-    my_email = "verdysworld@gmail.com"
-    my_email_pass = "mascwseuajhxjenh"
+    my_email = os.environ.get("EMAIL_NAME")
+    my_email_pass = os.environ.get("EMAIL_PASS")
     
     subject = "Test Email"
     body = '''This is a test email'''
