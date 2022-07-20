@@ -20,10 +20,10 @@ while True:
     url = "https://australia-southeast1-cybernetic-muse-356101.cloudfunctions.net/send-email"
     headers = CaseInsensitiveDict()
     headers["Content-Type"] = "application/json"
-    payload = '{"destination_email": "verdyg24@gmail.com"}'
+    payload = f'"destination_email": "{destination_email}"'
     response = requests.post(url, headers=headers, data=payload)
-
-    c_socket.send("Email has been sent.".encode())
+    print(f"Email has been sent to {destination_email}")
+    c_socket.send("Email has been sent. ".encode())
 
   c_socket.send("Thank you for connecting!".encode())
   c_socket.close()
